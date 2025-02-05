@@ -5,8 +5,6 @@ LA VPC TIENE QUE SER LA 10.2XX.0.0/16
 Un servidor de comunicaciones unificadas que incluye mensajería instántanea, llamadas y videoconferencia.
 Creado en AWS (Amazon Web Service) pensado para uso cotidiano y con la posibilidad de ser escalable.
 
-![Screenshot](docs/diagram.png)
-
 ## Introducción 📝
 El sistema se compone de 4 redes en su totalidad, siendo 2 de ellas redes publicas para usar un proxy como balanceo de carga en las redes privadas.
 En cada red privada se crean 2 instancias iguales, utilizando el proxy publico como balanceo de carga de solicitudes de los mismos y en cada red, utilizando diferentes tecnologias para la preservación de datos.
@@ -32,15 +30,5 @@ El servicio de incidencias se compone de:
 git clone https://github.com/cfuentesc01/mensagl.git
 cd mensagl
 ```
-
-3. Responder a las cuestiones 📄
-
-- `User` - Un nombre usado para añadir a las etiquetas de objetos, personalizando el esquema.
-- `DuckDNS API` - Token proporcionado por DuckDNS en su página web.
-- `dominios DuckDNS` - 2 Dominios DuckDNS a utlizar, tanto para el servico de mensajería como el de incidencias.
-- `RDS Wordpress Database` - Nombre de la base de datos para el RDS Wordpress.
-- `RDS Wordpress Username` - Nombre de usuario para el RDS Wordpress.
-- `RDS Wordpress Password` - Contraseña para el usuario del RDS Wordpress. 
-
 ##  🚨 Still in development 🚧
 ![z37wrt6awmkd1](https://github.com/user-attachments/assets/3cadc2d4-bcfc-4751-bde9-c74307269490)
