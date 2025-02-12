@@ -1,9 +1,9 @@
-LA VPC TIENE QUE SER LA 10.2XX.0.0/16
-
 # MensAGL 🔥 LosCowboysDelInfierno 🔥
 
 Un servidor de comunicaciones unificadas que incluye mensajería instántanea, llamadas y videoconferencia.
 Creado en AWS (Amazon Web Service) pensado para uso cotidiano y con la posibilidad de ser escalable.
+
+![Screenshot]
 
 ## Introducción 📝
 El sistema se compone de 4 redes en su totalidad, siendo 2 de ellas redes publicas para usar un proxy como balanceo de carga en las redes privadas.
