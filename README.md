@@ -3,7 +3,7 @@
 Un servidor de comunicaciones unificadas que incluye mensajería instántanea, llamadas y videoconferencia.
 Creado en AWS (Amazon Web Service) pensado para uso cotidiano y con la posibilidad de ser escalable.
 
-![Screenshot]
+![Screenshot](docs/MENSAGL.png)
 
 ## Introducción 📝
 El sistema se compone de 4 redes en su totalidad, siendo 2 de ellas redes publicas para usar un proxy como balanceo de carga en las redes privadas.
