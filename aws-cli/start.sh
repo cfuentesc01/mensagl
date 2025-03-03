@@ -585,11 +585,6 @@ SG_ID_UBUNTU=$(aws ec2 create-security-group \
     --vpc-id "$VPC_ID" \
     --query "GroupId" \
     --output text)
-aws ec2 authorize-security-group-ingress \
-    --group-id "$SG_ID_UBUNTU" \
-    --protocol tcp \
-    --port 22 \
-    --cidr 0.0.0.0/0
 
 # Allow HTTP (Port 80) - If you plan to run a web server
 aws ec2 authorize-security-group-ingress \
