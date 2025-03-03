@@ -1,9 +1,9 @@
 #!/bin/bash
 
 
-MAESTRO_USER="osboxes"  
-MAESTRO_IP="192.168.31.221" 
-DB_NAME="sedes"  
+MAESTRO_USER="ubuntu"  
+MAESTRO_IP="10.208.3.10" 
+DB_NAME="xmpp_db"  
 BACKUP_DIR="/var/backups/mysql_maestro" 
 SSH_KEY="/home/osboxes/.ssh/id_rsa"  
 MYSQL_DATA_DIR="/var/lib/mysql"  
