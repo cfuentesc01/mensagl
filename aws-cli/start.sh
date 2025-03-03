@@ -663,7 +663,10 @@ INSTANCE_ID=$(aws ec2 run-instances \
 echo "EC2 Instance Created: ${INSTANCE_ID}"
 
 
-# ====== Attach the Volumes ======
+echo "Esperando a que la instancia esté en estado 'running'..."
+aws ec2 wait instance-running --instance-ids $INSTANCE_ID
+
+# Ahora adjunta los volúmenes
 aws ec2 attach-volume --volume-id $VOLUME_ID_1 --instance-id $INSTANCE_ID --device /dev/xvdf
 aws ec2 attach-volume --volume-id $VOLUME_ID_2 --instance-id $INSTANCE_ID --device /dev/xvdg
 
